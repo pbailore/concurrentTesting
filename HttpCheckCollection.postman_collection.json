@@ -1,8 +1,44 @@
 {
 	"info": {
-		"_postman_id": "9cec3cc1-d5e4-45a1-821b-b72d8fc57ac9",
-		"name": "HttpCheckCollection",
+		"_postman_id": "9e78e491-d0f2-43a3-a197-e33bbf71e7ce",
+		"name": "MAHealthSimple",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "CheckingHealthofContentRepo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "317e935c-4507-4401-a2a0-ac350c5aa4ef",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
