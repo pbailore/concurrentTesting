@@ -1,0 +1,764 @@
+{
+	"info": {
+		"_postman_id": "c6d4651e-cc7a-44d1-9898-adb912d1fa99",
+		"name": "PODHealthCheckCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "adminServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "559d597f-0079-4fba-a325-afda795716fb",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.2\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/admin-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"admin-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LicenseServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7926dcdb-b584-430c-9cae-18334cdaa11e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.26\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/license-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"license-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auditLogServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "879c0a57-ce8d-44b0-9345-b24934ca010e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.27\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/auditlog-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"auditlog-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CaServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d0d12118-84b7-4ac5-b057-18b919739f4d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/ca-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"ca-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SchedulerServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "05fac252-1017-4344-ac9e-f4016e5de920",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/scheduler-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"scheduler-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KMSServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "095784b3-e923-4940-ba56-00acf0935c58",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"2.0.0-Rel.8\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/kms-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"kms-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SessionServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4711ff63-280e-45f0-951d-9cdc7874add5",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.25\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/session-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"session-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NotificationService",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a57ae362-1e7b-4935-998a-ccb3e696a61c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.22\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/notification-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"notification-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PreferenceServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fd0adc6d-cadf-41ba-9689-4f188e563caa",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.22\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/preference-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"preference-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CloudUIHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "49e8897b-8822-4dcc-9ec0-c0758b3c4ef0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.39\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/cloudUI/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"cloudUI",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BundleServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0663368d-980e-4f5f-964b-f559e813526a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.24\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/bundle-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"bundle-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jls-diHealthServiceCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5c074fd7-dcfe-4a1d-b2cd-78c238b938e9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.24\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/jls-di/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"jls-di",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MigrationServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.24\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/jls-di/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"jls-di",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CloudShellHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.39\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/cloudshell/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"cloudshell",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaasPodHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Florence_Ebf.rel-31.b39\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/saas/build.txt",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"saas",
+						"build.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaasACHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Florence_Ebf.rel-31.b39\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/ac/build.txt",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"ac",
+						"build.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaasChannelHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Florence_Ebf.rel-31.b39\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/ac/build.txt",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"ac",
+						"build.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaasDaHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ICS NODE IS ALIVE\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/da/web.saas.service/html/icsalive.html",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"da",
+						"web.saas.service",
+						"html",
+						"icsalive.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V3apiServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"1.0.0-Ebf.19\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-pod1.devzerodw.infaqa.com/saas/public/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-pod1",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"saas",
+						"public",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
