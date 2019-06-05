@@ -13,7 +13,7 @@
 					"script": {
 						"id": "317e935c-4507-4401-a2a0-ac350c5aa4ef",
 						"exec": [
-							"tests[\"Status code is 200\"]=responseCode.code===200;"
+							"tests[\"Status code is 400\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
