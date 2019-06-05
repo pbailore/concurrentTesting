@@ -13,10 +13,7 @@
 					"script": {
 						"id": "317e935c-4507-4401-a2a0-ac350c5aa4ef",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -26,18 +23,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://dev-ma.devzerodw.infaqa.com/content-repo/mgmtapi/version",
+					"raw": "https://jsonplaceholder.typicode.com/posts",
 					"protocol": "https",
 					"host": [
-						"dev-ma",
-						"devzerodw",
-						"infaqa",
+						"jsonplaceholder",
+						"typicode",
 						"com"
 					],
 					"path": [
-						"content-repo",
-						"mgmtapi",
-						"version"
+						"posts"
 					]
 				}
 			},
