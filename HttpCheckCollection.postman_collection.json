@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "9e78e491-d0f2-43a3-a197-e33bbf71e7ce",
-		"name": "MAHealthSimple",
+		"_postman_id": "9cec3cc1-d5e4-45a1-821b-b72d8fc57ac9",
+		"name": "HttpCheckCollection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "CheckingHealthofContentRepo",
+			"name": "https://jsonplaceholder.typicode.com/posts",
 			"event": [
 				{
 					"listen": "test",
