@@ -7,7 +7,7 @@
   },
   "scripts":{
   "api-tests-production_ma":"newman run ./MAHealthCheck_Upgrade.postman_collection.json --reporters cli,junit --reporter-junit-export newman_ma.xml",
-  "api-tests-production_pod":"newman run ./PODHealthCheckURLS_QAPOD.postman_collection.json --reporters cli,junit --reporter-junit-export newman_ma.xml"  
+  "api-tests-production_pod":"newman run ./PODHealthCheckURLS_QAPOD.postman_collection.json --reporters cli,junit --reporter-junit-export newman_pod.xml"  
   },
   "author":"Prathap Bailore",
   "dependencies":{
