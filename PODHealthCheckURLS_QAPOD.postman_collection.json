@@ -1,0 +1,722 @@
+{
+	"info": {
+		"_postman_id": "355c5cdc-3537-4c90-9310-d96e41b468b0",
+		"name": "PODHealthCheckURLS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "adminServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "559d597f-0079-4fba-a325-afda795716fb",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/admin-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"admin-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LicenseServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "aafb2bf6-b73b-4146-b114-e45b5d7e3889",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/license-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"license-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auditLogServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "879c0a57-ce8d-44b0-9345-b24934ca010e",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/auditlog-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"auditlog-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CaServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d0d12118-84b7-4ac5-b057-18b919739f4d",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/ca-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"ca-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SchedulerServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "05fac252-1017-4344-ac9e-f4016e5de920",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/scheduler-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"scheduler-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KMSServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "095784b3-e923-4940-ba56-00acf0935c58",
+						"exec": [
+							"https://qa-pod1.upgrade.infaqa.com/kms-service/mgmtapi/version\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/kms-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"kms-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SessionServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4711ff63-280e-45f0-951d-9cdc7874add5",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/session-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"session-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NotificationService",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a57ae362-1e7b-4935-998a-ccb3e696a61c",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/notification-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"notification-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PreferenceServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fd0adc6d-cadf-41ba-9689-4f188e563caa",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/preference-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"preference-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CloudUIHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "49e8897b-8822-4dcc-9ec0-c0758b3c4ef0",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/cloudUI/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"cloudUI",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BundleServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0663368d-980e-4f5f-964b-f559e813526a",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/bundle-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"bundle-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jls-diHealthServiceCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5c074fd7-dcfe-4a1d-b2cd-78c238b938e9",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/jls-di/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"jls-di",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MigrationServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/migration/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"migration",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CloudShellHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/cloudshell/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"cloudshell",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaasPodHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/saas/public/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"saas",
+						"public",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaasACHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/ac/build.txt",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"ac",
+						"build.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaasChannelHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/channel/build.txt",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"channel",
+						"build.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaasDaHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/da/web.saas.service/html/icsalive.html",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"da",
+						"web.saas.service",
+						"html",
+						"icsalive.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V3apiServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/saas/public/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"saas",
+						"public",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-pod1.upgrade.infaqa.com/admin-service/mgmtapi/version",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "559d597f-0079-4fba-a325-afda795716fb",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod1.upgrade.infaqa.com/admin-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod1",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"admin-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
