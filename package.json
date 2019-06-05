@@ -1,5 +1,5 @@
 {
-  "name":"postman-newman-jenkins",
+  "name":"HealthCheck_Jenkins_Job",
   "version":"1.0.0",
   "description":"Project for storing Postman tests",
   "directories":{
@@ -10,6 +10,6 @@
   },
   "author":"Prathap Bailore",
   "dependencies":{
-  "newman":"3.5.2"
+  "newman":"6.9.0"
   }  
 }
