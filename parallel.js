@@ -3,7 +3,7 @@ var path = require('path'),
   newman = require('newman'),
 
   parametersForTestRun = {
-    collection: path.join(__dirname, 'MAHealthSimple.postman_collection.json'), // your collection    
+    collection: path.join(__dirname, 'PODHealthCheckURLS_QAPOD.postman_collection.json'), // your collection    
   };
 
 parallelCollectionRun = function(done) {
