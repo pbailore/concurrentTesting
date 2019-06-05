@@ -6,7 +6,7 @@
   "test":"tests"
   },
   "scripts":{
-  "api-tests-production":"newman run MAHealthCheck.postman_collection.json"
+  "api-tests-production":"npm run MAHealthCheck.postman_collection.json"
   },
   "author":"Prathap Bailore",
   "dependencies":{
