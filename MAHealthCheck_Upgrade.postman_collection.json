@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "13fa24a7-5590-444d-ace1-75889a7115f0",
+		"name": "MAHealthCheck_Upgrade",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckingHealthofContentRepo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "317e935c-4507-4401-a2a0-ac350c5aa4ef",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-ma.upgrade.infaqa.com/content-repo/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-ma",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"content-repo",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckingHealthofMa",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4a256fe3-63de-4b36-9811-3878d7af769e",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-ma.upgrade.infaqa.com/ma/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-ma",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"ma",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MACHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bc8b4f1a-2735-4922-9063-31bd06ba2a9c",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-ma.upgrade.infaqa.com/mac/build.txt",
+					"protocol": "https",
+					"host": [
+						"qa-ma",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"mac",
+						"build.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SAASHealthCheckURL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6696a4e7-a0f1-4aa2-ab9b-1f2fd6fa1f44",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-ma.upgrade.infaqa.com/saas/public/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-ma",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"saas",
+						"public",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IdentityServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d34f397c-1a89-45e4-87ed-110c45a547fe",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-ma.upgrade.infaqa.com/identity-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-ma",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"identity-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
