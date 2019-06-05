@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "9e78e491-d0f2-43a3-a197-e33bbf71e7ce",
+		"name": "MAHealthSimple",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckingHealthofContentRepo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "317e935c-4507-4401-a2a0-ac350c5aa4ef",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-ma.devzerodw.infaqa.com/content-repo/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"dev-ma",
+						"devzerodw",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"content-repo",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
