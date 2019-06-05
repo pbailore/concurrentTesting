@@ -6,7 +6,8 @@
   "test":"tests"
   },
   "scripts":{
-  "api-tests-production_ma":"newman run ./MAHealthCheck_Upgrade.postman_collection.json"  
+  "api-tests-production_ma":"newman run ./MAHealthCheck_Upgrade.postman_collection.json",
+  "api-tests-production_pod":"newman run ./PODHealthCheckURLS_QAPOD.postman_collection.json"  
   },
   "author":"Prathap Bailore",
   "dependencies":{
