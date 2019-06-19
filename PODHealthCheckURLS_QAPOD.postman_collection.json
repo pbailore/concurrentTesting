@@ -23,10 +23,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/admin-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/admin-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -58,10 +58,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/license-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/license-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -93,10 +93,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/auditlog-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/auditlog-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -128,10 +128,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/ca-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/ca-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -163,10 +163,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/scheduler-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/scheduler-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -188,7 +188,7 @@
 					"script": {
 						"id": "095784b3-e923-4940-ba56-00acf0935c58",
 						"exec": [
-							"https://qa-pod1.upgrade.infaqa.com/kms-service/mgmtapi/version\r",
+							"https://qa-pod2.upgrade.infaqa.com/kms-service/mgmtapi/version\r",
 							""
 						],
 						"type": "text/javascript"
@@ -199,10 +199,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/kms-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/kms-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -235,10 +235,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/session-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/session-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -271,10 +271,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/notification-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/notification-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -306,10 +306,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/preference-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/preference-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -342,10 +342,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/cloudUI/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/cloudUI/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -378,10 +378,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/bundle-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/bundle-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -414,10 +414,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/jls-di/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/jls-di/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -450,10 +450,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/migration/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/migration/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -486,10 +486,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/cloudshell/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/cloudshell/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -521,10 +521,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/saas/public/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/saas/public/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -558,10 +558,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/ac/build.txt",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/ac/build.txt",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -593,10 +593,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/channel/build.txt",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/channel/build.txt",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -628,10 +628,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/da/web.saas.service/html/icsalive.html",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/da/web.saas.service/html/icsalive.html",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -665,10 +665,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/saas/public/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/saas/public/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
@@ -684,7 +684,7 @@
 			"response": []
 		},
 		{
-			"name": "https://qa-pod1.upgrade.infaqa.com/admin-service/mgmtapi/version",
+			"name": "https://qa-pod2.upgrade.infaqa.com/admin-service/mgmtapi/version",
 			"event": [
 				{
 					"listen": "test",
@@ -701,10 +701,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://qa-pod1.upgrade.infaqa.com/admin-service/mgmtapi/version",
+					"raw": "https://qa-pod2.upgrade.infaqa.com/admin-service/mgmtapi/version",
 					"protocol": "https",
 					"host": [
-						"qa-pod1",
+						"qa-pod2",
 						"upgrade",
 						"infaqa",
 						"com"
