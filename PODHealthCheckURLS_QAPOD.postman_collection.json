@@ -41,6 +41,41 @@
 			"response": []
 		},
 		{
+			"name": "adminServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "559d597f-0079-4fba-a325-afda795716fb",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-pod2.upgrade.infaqa.com/admin-service/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"qa-pod2",
+						"upgrade",
+						"infaqa",
+						"com"
+					],
+					"path": [
+						"admin-service",
+						"mgmtapi",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "auditLogServiceHealthCheck",
 			"event": [
 				{
