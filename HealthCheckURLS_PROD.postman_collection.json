@@ -50,9 +50,7 @@
 					"script": {
 						"id": "4711ff63-280e-45f0-951d-9cdc7874add5",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -87,10 +85,7 @@
 					"script": {
 						"id": "095784b3-e923-4940-ba56-00acf0935c58",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -125,10 +120,7 @@
 					"script": {
 						"id": "05fac252-1017-4344-ac9e-f4016e5de920",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -163,10 +155,7 @@
 					"script": {
 						"id": "49e8897b-8822-4dcc-9ec0-c0758b3c4ef0",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -201,10 +190,7 @@
 					"script": {
 						"id": "4a256fe3-63de-4b36-9811-3878d7af769e",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -238,10 +224,7 @@
 					"script": {
 						"id": "fd0adc6d-cadf-41ba-9689-4f188e563caa",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -276,10 +259,7 @@
 					"script": {
 						"id": "bc8b4f1a-2735-4922-9063-31bd06ba2a9c",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -312,10 +292,7 @@
 					"script": {
 						"id": "0663368d-980e-4f5f-964b-f559e813526a",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -350,10 +327,7 @@
 					"script": {
 						"id": "6696a4e7-a0f1-4aa2-ab9b-1f2fd6fa1f44",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -388,10 +362,7 @@
 					"script": {
 						"id": "5c074fd7-dcfe-4a1d-b2cd-78c238b938e9",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -426,9 +397,7 @@
 					"script": {
 						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -462,10 +431,7 @@
 					"script": {
 						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -500,10 +466,7 @@
 					"script": {
 						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -537,10 +500,7 @@
 					"script": {
 						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -575,10 +535,7 @@
 					"script": {
 						"id": "d34f397c-1a89-45e4-87ed-110c45a547fe",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -612,10 +569,7 @@
 					"script": {
 						"id": "879c0a57-ce8d-44b0-9345-b24934ca010e",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -650,10 +604,7 @@
 					"script": {
 						"id": "aafb2bf6-b73b-4146-b114-e45b5d7e3889",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -688,10 +639,7 @@
 					"script": {
 						"id": "d0d12118-84b7-4ac5-b057-18b919739f4d",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -726,9 +674,7 @@
 					"script": {
 						"id": "d93a1657-91fb-43cc-984e-c1452700da93",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -763,10 +709,7 @@
 					"script": {
 						"id": "a57ae362-1e7b-4935-998a-ccb3e696a61c",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -801,9 +744,7 @@
 					"script": {
 						"id": "4711ff63-280e-45f0-951d-9cdc7874add5",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -838,9 +779,7 @@
 					"script": {
 						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
@@ -874,12 +813,7 @@
 					"script": {
 						"id": "48fa1b81-9f62-4fba-8375-aebf8d564ecf",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"pm.test(\"Body matches string\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"Florence_Ebf.rel-31.b39\");",
-							"});"
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
