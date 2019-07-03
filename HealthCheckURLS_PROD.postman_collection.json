@@ -57,7 +57,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://dev-pod1.devzerodw.infaqa.com/session-service/mgmtapi/healthy",
+					"raw": "https://usw1.dm-staging.informaticacloud.com/session-service/mgmtapi/healthy",
 					"protocol": "https",
 					"host": [
 						"dev-pod1",
