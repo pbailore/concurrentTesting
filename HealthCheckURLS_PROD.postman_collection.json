@@ -822,9 +822,9 @@
 					"raw": "https://usw1.dm-staging.informaticacloud.com/session-service/mgmtapi/healthy",
 					"protocol": "https",
 					"host": [
-						"dev-pod1",
-						"devzerodw",
-						"infaqa",
+						"usw1",
+						"dm-staging",
+						"informaticacloud",
 						"com"
 					],
 					"path": [
