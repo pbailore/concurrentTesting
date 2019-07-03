@@ -40,41 +40,6 @@
 			"response": []
 		},
 		{
-			"name": "SessionServiceHealthCheck",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "4711ff63-280e-45f0-951d-9cdc7874add5",
-						"exec": [
-							"tests[\"Status code is 200\"]=responseCode.code===200;"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://usw1.dm-staging.informaticacloud.com/session-service/mgmtapi/healthy",
-					"protocol": "https",
-					"host": [
-						"dev-pod1",
-						"devzerodw",
-						"infaqa",
-						"com"
-					],
-					"path": [
-						"session-service",
-						"mgmtapi",
-						"healthy"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "KMSServiceHealthCheck",
 			"event": [
 				{
