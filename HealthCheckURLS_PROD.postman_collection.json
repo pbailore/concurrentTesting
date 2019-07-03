@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "317e935c-4507-4401-a2a0-ac350c5aa4ef",
+						"id": "b7de00d1-8a6d-403d-9e22-3c0cb320eb9e",
 						"exec": [
 							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
@@ -34,6 +34,79 @@
 						"content-repo",
 						"mgmtapi",
 						"healthy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SessionServiceHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4711ff63-280e-45f0-951d-9cdc7874add5",
+						"exec": [
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://usw1.dm-staging.informaticacloud.com/session-service/mgmtapi/healthy",
+					"protocol": "https",
+					"host": [
+						"usw1",
+						"dm-staging",
+						"informaticacloud",
+						"com"
+					],
+					"path": [
+						"session-service",
+						"mgmtapi",
+						"healthy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PackageManagerHealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d2d80650-63ae-4e56-a479-11c72e8fbb07",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://common.dm-staging.informaticacloud.com/package-manager/mgmtapi/version",
+					"protocol": "https",
+					"host": [
+						"common",
+						"dm-staging",
+						"informaticacloud",
+						"com"
+					],
+					"path": [
+						"package-manager",
+						"mgmtapi",
+						"version"
 					]
 				}
 			},
@@ -800,41 +873,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "SessionServiceHealthCheck",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "4711ff63-280e-45f0-951d-9cdc7874add5",
-						"exec": [
-							"tests[\"Status code is 200\"]=responseCode.code===200;"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://usw1.dm-staging.informaticacloud.com/session-service/mgmtapi/healthy",
-					"protocol": "https",
-					"host": [
-						"usw1",
-						"dm-staging",
-						"informaticacloud",
-						"com"
-					],
-					"path": [
-						"session-service",
-						"mgmtapi",
-						"healthy"
-					]
-				}
-			},
-			"response": []
-		}		
+		}
 	]
 }
