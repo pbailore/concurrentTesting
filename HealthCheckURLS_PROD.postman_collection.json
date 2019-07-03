@@ -82,10 +82,7 @@
 					"script": {
 						"id": "d2d80650-63ae-4e56-a479-11c72e8fbb07",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
+							"tests[\"Status code is 200\"]=responseCode.code===200;"
 						],
 						"type": "text/javascript"
 					}
