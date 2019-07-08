@@ -6,7 +6,7 @@
   "test":"tests"
   },
   "scripts":{
-  "api-tests-production":"newman run ./HealthCheckURLS_PROD.postman_collection.json --reporters cli,junit --reporter-junit-export newman_prod.xml"
+  "api-tests-production":"newman run ./HealthCheckURLS_prePROD.postman_collection.json --reporters cli,junit --reporter-junit-export newman_preprod.xml"
   },
   "author":"Prathap Bailore",
   "dependencies":{
